@@ -1,0 +1,212 @@
+/*General */
+
+html, body {
+  margin:0px;
+  height:100%;
+}
+
+body {background-image: none;
+	 padding: 0;
+
+}
+
+img {
+	width: 10em;
+	height: 10em;
+	}
+
+p {
+	width: 70%;
+	margin-bottom: 4em;
+
+}
+
+										/* CONTENU  */
+
+
+
+/*Bouton select */
+
+#select {
+
+	display: inline-block;
+ 	border : 2px white solid;
+ 	padding:  5px  10px 5px 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 2%;
+	font-size: 20px;
+
+}
+
+
+/* FORMATION ET DIPLOME  */
+
+.experiencesweb {
+	padding-left: 5%;
+}
+
+.experiencesweb  section  {
+	position: relative;
+	bottom: 20px;
+	display: block;
+    width: 500px;
+    height: 40px;
+    font-size: 15px;
+    background-color: white;
+    border: 2px solid #F7C9B6;
+    padding: 5px 5px 5px 5px;
+    margin-top: 5%;
+    overflow: hidden;
+
+}
+
+
+.experiencesweb h2 {
+	position: relative;
+	bottom: 20%;
+	margin-bottom: 0px;
+}
+
+.experiencesweb h2:after {
+	content: "+";
+	position: relative;
+	left: 20px;
+}
+
+
+.experiencesweb section img {
+	background-color: white;
+	width: 20%;
+	height: 10%;
+	opacity: 0.5;
+	position: relative;
+	left: 35%;
+
+}
+
+.experiencesweb section span {
+	display: block;
+	text-align: justify;
+	margin-left: 2%;
+	margin-right: 2%;
+
+}
+
+.experiencesweb section span:first-of-type{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/*Transition si pas de JS */
+/*.experiencesweb  section:hover {
+	overflow: visible;
+	width: fit-content;
+	height: fit-content;
+	transform: rotateX( 360deg);
+	transition: transform 0.6s;
+
+	
+}*/
+
+/* Ma Timeline */
+
+.container{
+	padding-top: 5%;
+	padding-bottom: 70%;
+	height: fit-content;
+	margin-left: 28.5%;
+  }
+
+  .timeline{
+	  /* counter-reset =  resets a CSS counter to a given value  */
+	counter-reset: year 2016;
+	position: absolute;
+	width: auto;
+  margin-left: 15%;
+
+  }
+
+ .timeline li{
+	list-style: none;
+	width: 33%;
+	position: relative;
+	margin-bottom: 50%;
+  }
+
+
+  /*Mes bulles */
+  .timeline li:before{
+	counter-increment: year;
+	content: counter(year);
+	width: 100px;
+	height: 100px;
+	border: 3px solid #f7c9b6;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+	line-height: 90px;
+	margin-left: 48%;
+	background: #F1F1F1;
+	color: #000;
+	cursor: pointer;
+	font-size: 30px;
+  }
+
+
+.ligne {height: 100%;
+		width: 1px;
+		height: 100%;
+		background-color: black ;
+		position: fixed;
+		top: 0;
+		left: 75px;
+		z-index: -10;
+		margin-left: 46%;
+}
+
+
+
+.timeline li span { display: none;}
+
+
+.timeline li:active span {
+
+	display: block;
+	width: 20em;
+	background-color: #F1F1F1;
+	border: 2px solid #f7c9b6;
+	position: absolute;
+	left: 9em;
+	bottom: 2em;
+	z-index: 10;
+	line-height: 130%;
+	padding: 10%;
+
+}
+
+/*Les id */
+
+#video {width: 70em;
+	height: 40em;
+	padding-bottom: 5em;
+	margin-top: 5em;
+}
+
+section:first-child {
+	margin-top: 6em;
+}
+
+
+div#mask {
+position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+top: 0;
+z-index: -10;
+
+}
+

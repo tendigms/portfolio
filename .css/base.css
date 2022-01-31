@@ -1,0 +1,135 @@
+/* General  */
+
+/*Si  site élasitque choisir % ou em sinon définir un min width en px*/
+
+body {
+		background-image: url(./images/fondmodifie.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size : cover ;
+		position: relative;
+
+	    /*width: 100%;*/
+	    height: 100%;
+	    left: 0;
+	    top: 0;
+
+	}
+
+
+
+header {
+		background: linear-gradient(to bottom, #f7c9b6 75% , transparent 90%); 
+		height: 5em;
+		width: 100%;
+		position: fixed;
+		top : 0; 
+		left: 0px;
+		right: 0px;
+		margin-bottom: 10px;
+		z-index: 10;
+		}
+
+
+a { bottom: 10px;
+	display: block;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-top: 2px;
+	}
+
+li {margin-right: 5px;}
+
+a  {text-decoration: none;
+	color: black;}
+
+
+
+/* @font-face {
+	font-family: "Bokra";
+	src: url(./font/FontsFree-Net-bokra.ttf);
+}*/
+
+
+
+/* Les classes   */
+
+.boutonmenu {
+	list-style-type: none;
+	display: inline-block;
+ 	border : 2px black solid;
+ 	padding:  5px  10px 5px 10px;
+ 	float: right;
+ 	position: relative;
+ 	right: 4.5em;
+ 	margin-left: 10px;
+ 	font-weight: bolder;
+ 	width: 150px;
+ 	height: 20px;
+ }
+
+/* Cadres menu base */
+.boutonmenu li {
+	display: inline-block;
+	position: relative;
+
+}
+
+li.boutonmenu:hover {
+	background-color: white;
+	transition: transform 800ms;
+} 
+
+/* Cadres avec écriture  */
+li.boutonmenu a {
+ 	background-color: white;
+ 	position: absolute;
+ 	bottom: -5px;
+ 	right : 5px; 
+ 	text-align: center;
+	transition-duration: 400ms;
+    
+ }
+
+li.boutonmenu:hover a {
+	bottom: 2px;
+	right: 6px;
+	/*font-family: "Bokra";*/
+}
+
+
+/* FOOTER  */
+
+footer {
+	background: linear-gradient(to top, #f7c9b6 75%, transparent );
+	height: 5em;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	
+}
+
+footer a { position: relative;
+			top : 20%;
+			width: 200px;
+ }
+
+footer img.drapeau {
+	float: right;
+	width: 50px;
+}
+
+footer img {
+
+	height: 40%;
+	width: 45%;
+	position: relative;
+	bottom: 2.5em;
+	right: 2em;
+	margin-right: 20px;
+
+	
+
+}
+

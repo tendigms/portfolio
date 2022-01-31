@@ -1,0 +1,86 @@
+/* General  */
+
+
+
+body {
+		background-image: url(./images/backgroundcraie.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size : 2000px ;
+	}
+
+footer {
+	background: linear-gradient(to top, #f7c9b6 75%, transparent  );
+	height: 5em;
+	position: absolute;
+	bottom: 0;
+
+}
+
+
+/* LES ID  */
+
+#checked { 
+		   height : 60px;
+		   width: 70px;
+		   position: relative;
+		   top : 4.5em; 
+		   right: 0;
+		 }
+
+#seconnecter {
+	width: 500px;
+	height: 300px;
+	background-color: #F7C9B6;
+	position:relative;
+	top: 240px;
+	border-radius: 20px;
+	margin-left: 34%;
+}
+
+#Headerdiv {
+	 background-color: #83BDC0;
+	 height: 70px;
+	 width: 500px;
+	 border-radius: 20px;
+	 margin-bottom: 20px;
+	 position: relative;
+}
+
+
+
+#seconnecter input {
+	width: 270px;
+	height: 40px;
+}
+
+
+#monformulaire span {
+	font-size: 30px;
+	font-family: Lastica;
+	margin-left: 9px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#monformulaire span:first-child {
+	margin-right: 1.4em;
+}
+
+#dashboardimg {
+	width: 60px ; 
+	height: 60px;
+	position: relative;
+	top : -15em;
+	left: 15px;
+}
+
+#monformulaire img + span {
+	position: relative;
+	top : -8.5em ;
+	left: 20px;
+
+
+}
+
+

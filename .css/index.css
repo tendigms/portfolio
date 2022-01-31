@@ -1,0 +1,142 @@
+
+/* General  */
+
+body {background-image: none;}
+
+
+/* Ma barre de recherche  */
+
+
+#bdr {  
+	height: 8em;
+	width: 1000px;
+	position: relative;
+	transform: translate(25%,190%); /*Pour déplacer la barre*/
+	}
+
+
+
+
+/*Champ input, bordure et texte  */
+
+#input { border: 2px #f7c9b6 solid; } 
+
+.champ  {
+	height: 2em;
+	width: 990px;
+	border-color: #f7c9b6 ;
+	border-radius: 30px;
+	font-family: Lato;
+	color : grey;
+	text-align: center;
+	font-size: 60px;
+	}
+
+a.champ {
+	border: 2px solid black;
+	border-color: #f7c9b6 ;
+	font-size: 20px;
+	font-family: Calibri;
+	font-weight: bold;
+	display: block;
+	width: 10em;
+	padding-top: 10px;
+}
+
+
+
+/* Bouton GTKM */
+
+#GTKM {
+	position: absolute;
+	top: 10em;
+	left: 9em;
+
+}
+
+/* Bouton CONTACT */
+
+#CONTACT {
+	position: absolute;
+	top: 10em;
+	left: 25em;
+
+}
+
+
+/* MA LOUPE */
+
+input.bouton { 
+	background-image: url(./images/loupe.png);
+	background-size: 10em;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 110px;
+	background-color: White;
+	border : none;
+	float: right;
+	position: relative;
+	bottom : 28em;
+	right: 5px;
+ }
+
+
+
+
+
+/*Pour mon animation */
+
+ #wrapper {
+ 	display: inline-flex ;
+ 	font-size: 70px;
+ 	position: relative;
+ 	bottom: 3em;
+ }
+
+ ul.dynamic-txts {
+  position: relative;
+  left: 50px;
+  width: 200px;
+ }
+
+ .dynamic-txts li {
+ 	list-style-type: none;
+ 	color: lightgray;
+ 	display: block;
+ 	width: 500px;
+ }
+
+
+ .dynamic-txts li span {
+ 	position: relative;
+ }
+
+ .dynamic-txts li span::after {
+ 	content: "";
+ 	position: absolute;
+ 	left: 60px;
+ 	height: 110%;
+ 	width: 79%;
+ 	border-left: 2px solid lightgray;   /* Pour mettre la barre effet typing  */
+ 	animation: typing 1.5s steps(20) infinite ; /* Pour qu'elle se déplace et couvre à chaque lettre  */
+ 	background: white;
+
+ }
+
+/*Contrôler l'animation mieux qu'avec transition*/
+
+ @keyframes typing {
+ 	100%
+   		{
+   			left: 100%;
+   			margin: 0 0px 0 0px;
+   		}
+ 
+ 	}
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+<?php
+include 'portfolio.inc.php';
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title> Contact  </title>
+<link rel="stylesheet" type="text/css" href="./.css/base.css">
+<link rel="stylesheet" type="text/css" href="./.css/contact.css">
+
+<script src="./.js/contact.js"></script>
+
+</head>
+<body onload="checkparam()"> 
+
+<?php
+  include("header.php");
+?>
+
+
+<!-- Formulaire  -->
+
+  <h1> <?php echo $tab_titre ['CONT']; ?> </h1>
+
+  <form action="contact_action.php" method="post" id="formulaire" onsubmit="return verifier()">
+   
+        <p>
+            <label><?php echo $tab_form [0] ['NOM']; ?></label><input id="nom" name="nom" type="text" /> <br/>
+        </p>
+
+
+        <p>
+            <label><?php echo $tab_form [0] ['PRENOM']; ?></label><input id="prenom" name="prenom" type="text" /> <br/>
+        </p>
+
+
+        <p>
+            <label>Email :</label><input id="email" name="email" type="text" /> <br/>
+        </p>
+          
+        <p>
+            <label> Message :</label>
+            <textarea id="msg" name="user_message"></textarea>
+       </p> 
+
+        <p id="action">
+                <input type="reset" value="<?php echo $tab_form [0] ['ANU']; ?>" onclick="flipfocus()" />
+                <input type="submit" value="<?php echo $tab_form [0] ['ENV']; ?>" />
+        </p>
+
+        <?php   //VERIFICATION PHP 
+        // if (isset($_GET['errorform'])) {
+         //echo "Veuillez entrer des données valides";
+        //}
+
+
+
+  ?>
+
+  </form>
+
+
+
+
+<!-- Ma carte profil    -->
+
+
+    <div class="card" >
+      <img src="./.css/images/confetti.gif" id="gif" alt="gif" style="visibility: hidden;">
+        <div class="card-inner">
+            <div class="card-front">
+                  <div class="card-content">
+
+                      <h2>Gomes Cindy </h2>
+                      <p> Développeur Web Junior</p>
+                      <p>HTML, CSS, JS</p>
+
+                  </div>
+            </div>
+                                   
+            <div class="card-back">
+                                      <div class="card-top">
+                                        <div class="card-image"></div>
+                                      </div>
+                                      <p> <?php echo $tab_form [0] ['DESCR']; ?> </p>
+                                      <p> <?php echo $tab_form [0] ['LIEN']; ?> </p>
+                <div class="card-icons">
+
+                      <a href="#" >
+                      </a>
+
+                      <a href="#" >
+                      </a>
+
+                      <a href="#" >
+                      </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<?php
+  include("footer.php");
+?>
+
+
+
+</body>
+</html>

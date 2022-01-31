@@ -1,0 +1,180 @@
+/* General  */
+
+body {
+		background-image: 
+		url(./images/backgroundcraie.jpg);
+		opacity: 0.8;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+}
+
+
+body:last-child {margin-bottom: 10em;}
+
+img { 
+	height: 110px;
+	position: relative;
+	left: 35%;
+	border-radius: 40%;
+	}
+
+#Headerdiv img {
+ width: 85px; 
+ height: 85px;
+ margin : auto;
+}
+
+span
+	{ 
+	bottom: 10000px;
+	display: block;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	}
+
+
+
+section {margin-top: 100px;}
+
+li {list-style-type: none;}
+
+
+a {margin-top: 10em;}
+
+
+/* LES ID  */
+
+#user a { width: 45px ; 
+		height: 40px;
+		position: absolute;
+		right: 1em;
+		top : 5px;
+		background-image: url(./images/useron.png);
+		background-size: 40px;
+		background-repeat: no-repeat;
+}
+
+#Headerdiv {
+	 background-color: rgb(131,189,192, 0.8) ; 
+	 height: 60px;
+	 width: 100%;
+	 margin-bottom: 20px;
+	 border-radius: 10px;
+}
+
+
+#mesinfos {
+	width: 40%;
+	height: 360px;
+	background-color: rgb(131,189,192, 0.8);
+	position:relative;
+	top: 200px;
+	border-radius: 10px;
+	margin :auto;
+}
+
+
+#mesinfos span {
+	font-size: 30px;
+}
+
+span.first:first-child {
+	font-size: 10px;
+	text-decoration: underline;
+	position: relative;
+ 	top: 5px;
+ 	padding: 5px 5px 5px 5px;
+ 	font-family: cursive;
+}
+
+
+#checked { 
+		   position: absolute ;
+		   left : 35% ;
+		   bottom : -90px; 
+		 }
+
+
+#monformulaire {
+	 position: relative;
+	 top: 40%;
+	left: 25%;
+}
+
+#monformulaire input {
+	width: 100px;
+}
+
+
+
+#mesinfos input {
+	width: 200px;
+	height: 25px;
+	margin-top: 5px;
+	margin-bottom: 16px;
+	margin-left: 4%;
+
+}
+
+#Supp {
+
+	margin-top: 2%;
+}
+
+
+form:last-child {
+
+	margin-bottom: 5em;
+}
+
+#monformulaire input[type="submit"] {
+
+	position: absolute;
+	left: 0;
+	top: 106%;
+}
+
+
+/*Mon Backoffice */
+
+h1 {margin-top: 3em;}
+
+ input[type="submit"].bo{
+
+	width: 10em;
+	background-color: white;
+	border: 2px thin black;
+	margin : 4em 4em 4em 4em;
+	box-shadow: 2px 5px 0 0 gray;
+	
+}
+
+ input[type="submit"] {
+	margin-bottom: 1em;	
+}
+
+
+section > span {
+	font-weight: bold;
+	font-size: 24px;
+	color: gray;
+}
+
+
+table {
+	border-collapse: collapse;
+	border : 2px brown solid;
+
+}
+
+th {
+	color: brown;
+	padding: 20px 20px 20px 20px;
+}
+
+
+span.ajout {
+	margin-top: 10%;
+}
+

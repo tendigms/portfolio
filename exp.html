@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title> Mes expériences </title>
+<link rel="stylesheet" type="text/css" href="./.css/base.css">
+<link rel="stylesheet" type="text/css" href="./.css/exp.css">
+
+</head>
+
+<body > 
+
+	<!-- Header -->
+
+		<header>
+
+		<nav> 
+				<ul id="menu">
+					<li class="boutonmenu"> <a href="projets.html" class="boutonmenu">  Mes Productions  </a></li>
+					<li class="boutonmenu"> <a href="exp.html" class="boutonmenu">  Mes expériences   </a> </li>
+					<li class="boutonmenu"> <a href="GTKM.html" class="boutonmenu"> A propos de moi  </a> </li>
+				</ul>
+
+				<select id="select">
+				<option onclick="showfrise()"> Saisonnier </option>
+				<option onclick="showexp()"> Formations & Diplômes </option>
+				</select>
+
+		</nav>
+
+	</header>
+
+
+<!-- Si select option = Saisonnier   -->
+
+<div class="container" style="display: none;">
+
+	<ul class="timeline">
+
+		<li> <span> Employée Polyvalente, KFC. <br>
+								Les différentes missions : nettoyage du lobby, accueil des clients, préparation des commandes...
+								  
+				</span>
+	 </li>
+
+	 	<li> <span> Hôtesse de caisse, Monoprix  <br>
+	 		Les différentes missions :
+			procéder à l'ouverture et fermeture de la caisse, enregistrer les achats, contrôler le flux client et gérer la file d'attente, répondre aux questions des clients ...				  
+				</span>
+	 </li>
+
+	 	<li> <span> Agent de surveillance et hôtesse d'accueil du musée de la mer de Cannes.
+				 <br>
+	 		Les différentes missions :
+			veiller à la sécurité des objets antiques,
+			accueil et orientation du public international... 			  
+				</span>
+	 </li>
+
+	 <li> <span> Stage de 2 mois en tant que Community Manager pour Ma Coiffeuse Afro.
+			 <br>
+	 		Description du poste : 
+			veille informationnelle et concurrentielle, 
+			création et publication de supports de communication sur les réseaux sociaux,
+			gestion du service après-vente (enquête de satisfaction).
+		  
+				</span>
+	 </li>
+
+	 	 <li> <span> Hôtesse de caisse, Lidl
+
+			 <br>
+	 		Mes missions : procéder à l'ouverture et fermeture de la caisse, enregistrer les achats, 
+			contrôler le flux client et gérer la file d'attente, répondre aux questions des clients,mise en rayon.
+				</span>
+	 </li>
+
+
+	</ul>
+ 
+	<div class="ligne"></div>
+
+</div> 
+
+
+
+
+<!-- Si select option = Formations & Diplômes  -->
+
+	<article class="experiencesweb" style="display: none;">
+
+			<h1 style="visibility: hidden;"> Mes expériences</h1>
+
+					<section onclick="flipfocus(this)"   class="rectangle">
+					<h2> Licence professionnelle LP IMAPP </h2> <br>
+					<span> 2021-2022 </span> <br>
+					<span> La LP IMAPP est une formation pour ceux qui aimeraient se convertir dans les métiers du web. . Le titulaire du diplôme peut être en charge de la conception, la réalisation et l'évaluation de sites web. 
+					La création en PHP de sites respectueux des directives du W3C (structure, accessibilité) et du Droit international
+					Le design de sites ergonomiques, la gestion de leur développement et leur intégration (AxureRP, HTML/CSS, Sass, Twig)
+					La conception et la création de bases de données MySQL
+					L'usage et l'adaptation de scripts JavaScript/Ajax
+					La création et la retouche d'images
+					L'usage de CMS (Wordpress/Bolt) et de frameworks (JQuery, Bootstrap, Symfony) 
+				  </span> <br>
+					<img src="./.css/images/formation/lmapp.png" alt="formation"> 
+					</section>
+
+					<section onclick="flipfocus(this)"   class="rectangle">
+					<h2> Formation de 2 semaines en graphisme </h2> <br>
+					<span> 2021 </span> <br>
+					<span> La formation Graphiste vous permet sur une période courte mais intensive d’acquérir la connaissance et la pratique des principales fonctions des 3 logiciels utilisés en graphisme : Adobe Photoshop, pour la retouche et la composition d’image, Adobe Illustrator pour le dessin vectoriel et de Figma pour le maquettage web.
+
+					Ensuite la formation est complétée par l’acquisition des techniques de réalisation d’une identité visuelle et être en mesure de réaliser une maquette web interactive fonctionnelle.
+
+				  </span> <br>
+					<img src="./.css/images/formation/sociallab.png" alt="formation"> 
+					</section>
+
+
+					<section onclick="flipfocus(this)"   class="rectangle">
+					<h2> Formation de 2 semaines en webdesign </h2> <br>
+					<span> 2021 </span> <br>
+					<span> Cette formation de Web Designer vous donnera les compétences et connaissances appropriées afin de concevoir et réaliser un site sous WordPress, d’utiliser le html/css pour faire les modifications de thèmes et d’y intégrer tout type de média. 
+				  </span> <br>
+					<img src="./.css/images/formation/sociallab.png" alt="formation"> 
+					</section>
+
+
+					<section onclick="flipfocus(this)"   class="rectangle">
+					<h2> Stage dans la start-up 'Ma Coiffeuse Afro' </h2> <br>
+					<span> 2020 </span> <br>
+					<span> Stage de 2 mois dans la start-up
+					"Ma Coiffeuse Afro" : 
+					Veille informationnelle,
+					Création et publication de supports  de communication sur les réseaux sociaux,
+					Gestion du service après-vente (enquêtes de satisfaction).
+				  </span> <br>
+					<img src="./.css/images/formation/logomca.png" alt="formation"> 
+					</section>
+
+
+					<section onclick="flipfocus(this)"   class="rectangle">
+					<h2> Licence information communication </h2> <br>
+					<span> 2017-2020 </span> <br>
+					<span> Stage de 2 mois dans la start-up
+					La première année de licence propose d’acquérir les fondamentaux théoriques et méthodologiques de la discipline. Elle offre également un enseignement de spécialité, des outils méthodologiques   et des langues.
+
+					En deuxième et en troisième année, un ensemble d’options permet à l’étudiant de choisir une certaine spécialisation (culture graphique, photographie numérique, conception et production de contenus numériques, création de site web, marketing ou animation sur le web).
+
+					Un stage obligatoire est réalisé en L3.
+				  </span> <br>
+					<img src="./.css/images/formation/paulva.png" alt="formation"> 
+					</section>
+
+	</article>
+
+
+	<div id="mask"> </div>
+
+
+	<!-- FOOTER  -->
+
+<footer> 
+
+	<a href="#"> Plan du site </a>
+	<a href="#"> Mentions légales </a>
+
+<!-- 	<img  class="drapeau" src="./.css/images/fr.svg"> 
+	<img class="drapeau" src="./.css/images/gb.svg">  -->
+ 
+</footer>
+
+
+<script src="./.js/exp.js"></script>
+
+</body>
+</html>

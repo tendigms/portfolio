@@ -1,0 +1,42 @@
+/* General  */
+
+
+img {
+	width: 100px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	}
+
+article { margin-top: 6em; 
+		border: 2px solid #f7c9b6 ;
+		background-color: whitesmoke;
+		padding: 10px;
+		width: 70%;
+		margin-left: 14%;
+}
+
+article p { margin-top: 80px;}
+
+/*Mes hobbies */
+
+section:first-of-type {
+ float: right;
+ padding-left: 10px;
+}
+
+
+/*Liens encadrés */
+.bouton {
+	height: auto;
+	width: auto;
+	border: 2px solid #f7c9b6 ;
+	font-size: 15px;
+	float: right;
+	position: relative;
+	right: 10%;
+	background-color: white;
+	text-align: center;
+	padding-right: 8px;
+	}
+
